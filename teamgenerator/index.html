@@ -1,0 +1,112 @@
+<!--
+	By MH11
+-->
+
+<!DOCTYPE html>
+<html lang="fa">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>GAMEGG - Random Team Generator</title>
+		
+		<meta name="keywords" content="gamegg, tournaments, esports, teamgenerator" />
+		<meta name="description" content="سرویس آنلاین تیم ساز تصادفی" />
+		<meta name="author" content="MH11" />
+		<meta name="copyright" content="GAMEGG" />
+		<meta name="url" content="https://tour.gamegg.ir/teamgenerator" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Share Link -->
+		<meta property="og:title" content="GAMEGG - Random Team Generator" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://tour.gamegg.ir/teamgenerator" />
+		<meta property="og:image" content="../img/share.png" />
+		<meta property="og:description" content="سرویس آنلاین تیم ساز تصادفی" />
+		<meta property="og:locale" content="fa_IR" />
+		<meta property="og:locale:alternate" content="en_US" />
+		<meta property="og:site_name" content="GAMEGG" />
+		
+		<!-- Theme Color -->
+		<meta name="theme-color" content="#17181F" />
+		<meta name="theme-color" content="#5C64C5" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="../favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<link rel="apple-touch-icon" type="image/x-icon" href="../favicon.ico" />
+		
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="../css/style.css" />
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="../css/all.min.css" />
+		
+		<!-- JQuery -->
+		<script src="../js/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="sticky-icon">
+			<a href="https://gamegg.ir" target="_blank">Community<i class="fa-solid fa-comments"></i></a>
+			<a href="https://discord.gg/2JjvhAk" target="_blank">Discord<i class="fa-brands fa-discord"></i></a>
+			<a href="https://www.instagram.com/gamegg.ir" target="_blank">Instagram<i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.youtube.com/@naabclan" target="_blank">YouTube<i class="fa-brands fa-youtube"></i></a>
+			<a href="https://www.aparat.com/naabclan" target="_blank">Aparat<i class="fa-solid fa-video"></i></a>
+		</div>
+		
+		<!-- Main -->
+		<section class="allPage">
+			<div class="container3">
+				<p class="title3"><i class="fa-solid fa-shuffle"></i> RANDOM TEAM GENERATOR</p>
+				<textarea name="" id="myInput" cols="30" rows="10" placeholder="name1&#13;&#10;name2&#13;&#10;name3&#13;&#10;name4&#13;&#10;etc..."></textarea>
+				<br>
+				<input type="number" placeholder="تعداد افراد در هر تیم" id="numberTeam" />
+				<br>
+				<button type="button" id="buttons3" onclick="getInputValue()" value="Submit">بر زدن</button>
+			</div>
+			<div class="hidden teams3">
+				<h2 class="hidden">لیست تیم ها</h2>
+				<div id="output" class="output"></div>
+				<button id="reset3" class="hidden">شروع مجدد</button>
+			</div>
+		</section>
+		<!-- /Main -->
+		
+		<!-- Footer -->
+		<footer>
+			<div class="share">
+				<div class="share-wrap">
+					<a class="share-icon" href="https://gamegg.ir" target="_blank" title="انجمن"><i class="fa-solid fa-comments"></i></a>
+					<a class="share-icon" href="https://discord.gg/2JjvhAk" target="_blank" title="دیسکورد"><i class="fa-brands fa-discord"></i></a>
+					<a class="share-icon" href="https://www.instagram.com/gamegg.ir" target="_blank" title="اینستاگرام"><i class="fa-brands fa-instagram"></i></a>
+					<a class="share-icon" href="https://www.youtube.com/@naabclan" target="_blank" title="یوتیوب"><i class="fa-brands fa-youtube"></i></a>
+					<a class="share-icon" href="https://www.aparat.com/naabclan" target="_blank" title="آپارات"><i class="fa-solid fa-video"></i></a>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p>&copy; ۱۳۹۹ - ۱۴۰۱ گیم جی جی. تمام حقوق محفوظ است.<br><br>طراحی شده توسط <a href="https://github.com/whoismh11" target="_blank" title="محمد حدادپور">MH11</a></p>
+			</div>
+		</footer>
+		<!-- /Footer -->
+		
+		<!-- Preloader -->
+		<div id="preloader">
+			<div class="preloader">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- /Preloader -->
+		
+		<!-- Scripts -->
+		<script src="../js/main2.js"></script>
+		<script src="../js/main.js"></script>
+		<!-- /Scripts -->
+	</body>
+	
+</html>
