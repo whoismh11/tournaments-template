@@ -1,0 +1,114 @@
+<!--
+	By MH11
+-->
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="fa"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fa"> <!--><![endif]-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>GAMEGG - Random Name Picker</title>
+		
+		<meta name="keywords" content="gamegg, tournaments, esports, namepicker" />
+		<meta name="description" content="سرویس آنلاین انتخاب کننده نام تصادفی" />
+		<meta name="author" content="MH11" />
+		<meta name="copyright" content="GAMEGG" />
+		<meta name="url" content="https://tour.gamegg.ir/namepicker" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Share Link -->
+		<meta property="og:title" content="GAMEGG - Random Name Picker" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://tour.gamegg.ir/namepicker" />
+		<meta property="og:image" content="../img/share.png" />
+		<meta property="og:description" content="سرویس آنلاین انتخاب کننده نام تصادفی" />
+		<meta property="og:locale" content="fa_IR" />
+		<meta property="og:locale:alternate" content="en_US" />
+		<meta property="og:site_name" content="GAMEGG" />
+		
+		<!-- Theme Color -->
+		<meta name="theme-color" content="#17181F" />
+		<meta name="theme-color" content="#5C64C5" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="../favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<link rel="apple-touch-icon" type="image/x-icon" href="../favicon.ico" />
+		
+		<!-- Stlylesheet -->
+		<link rel="stylesheet" href="../css/normalize.css" />
+		<link rel="stylesheet" href="../css/foundation.css" />
+		
+		<!-- Scripts -->
+		<script src="../js/custom.modernizr.js"></script>
+		<script src="../js/jquery-latest.min.js"></script>
+		
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="../css/style.css" />
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="../css/all.min.css" />
+		
+		<!-- JQuery -->
+		<script src="../js/jquery.min.js"></script>
+	</head>
+	
+	<body onload="reset();">
+		<div class="sticky-icon">
+			<a href="https://gamegg.ir" target="_blank">Community<i class="fa-solid fa-comments"></i></a>
+			<a href="https://discord.gg/2JjvhAk" target="_blank">Discord<i class="fa-brands fa-discord"></i></a>
+			<a href="https://www.instagram.com/gamegg.ir" target="_blank">Instagram<i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.youtube.com/@naabclan" target="_blank">YouTube<i class="fa-brands fa-youtube"></i></a>
+			<a href="https://www.aparat.com/naabclan" target="_blank">Aparat<i class="fa-solid fa-video"></i></a>
+		</div>
+		
+		<div class="full-head" style="width:100%; background-color:#17181F; border-bottom:1px solid #8B69C2;">
+			<div class="row">
+				<div class="large-12 columns" style="padding-top:20px; background-color:#17181F; z-index:20;">
+					<p class="title2"><i class="fa-solid fa-shuffle"></i> RANDOM NAME PICKER</p>
+					<ul class="button-group even-4">
+						<li><a href="index.html" class="alert button" id="reset">بازنشانی</a></li>
+						<li><button class="button" id="list" onclick="namelist();">لیست اسم ها</button></li>
+						<li><button class="button" id="save" onclick="save();">بروزرسانی و ذخیره</button></li>
+						<li><button class="success button" id="go" onclick="go();">برو بریم!</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns">
+				<h3 style="text-align:center; margin-top:30px; margin-bottom:60px; color:#CACACA;" id="headline">بریم ببینیم خوش شانس کیه؟!</h3>
+				<div id="varnote">
+					<img src="../img/logo.png">
+					<div class="copyright">&copy; کد نویسی شده توسط <strong>Heiswayi Nrird</strong><br><br>بازطراحی و بروزرسانی شده توسط <strong><a href="https://github.com/whoismh11" target="_blank" title="محمد حدادپور">MH11</a></strong></div>
+				</div>
+				<div id="popdown">
+					<div id="names" class="inbox"><textarea name="namesbox" id="namesbox"></textarea></div>
+				</div>
+				<div id="values"></div>
+			</div>
+		</div>
+		
+		<!-- Preloader -->
+		<div id="preloader">
+			<div class="preloader">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- /Preloader -->
+		
+		<!-- Scripts -->
+		<script src="../js/main3.js"></script>
+		<script src="../js/foundation.min.js"></script>
+		<script src="../js/main.js"></script>
+		<!-- /Scripts -->
+	</body>
+	
+</html>
